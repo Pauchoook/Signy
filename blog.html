@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css">
+    <title>Signy</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper-header">
+                <div class="block-logo">
+                    <a href="index.html" target="_blank" class="element__block-logo">
+                        <img src="img/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <ul class="ul__header-menu">
+                        <li class="li__header-menu numbers" id="li__header-menu__number" onclick="openNumber()">
+                            <a href="tel:0 800 750 643" class="element__header-menu">
+                                0 800 750 643
+                            </a>
+                            <div class="arrow__header-menu" id="arrow__header-menu-number"></div>
+                        </li>
+                        <li class="li__header-menu our" id="li__header-menu__our" onclick="openOur()">
+                            <a href="about.html" target="_blank" class="element__header-menu">
+                                про нас
+                            </a>
+                            <div class="arrow__header-menu" id="arrow__header-menu-our"></div>
+                        </li>
+                        <li class="li__header-menu">
+                            <a href="error.html" class="element__header-menu">
+                                цены
+                            </a>
+                        </li>
+                        <li class="li__header-menu">
+                            <a href="contacts.html" target="_blank" class="element__header-menu">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-number" id="ul-number">
+                        <li class="li-our">
+                            <a href="tel:+380 44 334 56 43" class="element-our">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="tel:+380 44 334 56 43" class="element-our">
+                                +380 44 338 86 43
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-our" id="ul-our">
+                        <li class="li-our">
+                            <a href="blog.html" class="element-our">
+                                блог
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="videos.html" target="_blank" class="element-our">
+                                видео
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="FAQ.html" target="_blank" class="element-our">
+                                вопросы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btns-header">
+                    <button class="btn-white btn-come">
+                        Вход
+                    </button>
+                    <button class="btn-blue btn-registration">
+                        регистрация
+                    </button>
+                </div>
+                <div class="language">
+                    <a href="#" class="element__language">
+                        рус
+                    </a>
+                    <img src="img/arrow-menu.png" alt="" class="arrow__language">
+                </div>
+                <div id="sidebar">
+                    <div class="burger" id="burger" onclick="openMenu()"></div>
+                    <div class="container__sidebar">
+                        <div class="wrapper-sidebar">
+                            <div class="block-logo">
+                                <a href="index.html" target="_blank" class="element__block-logo">
+                                    <img src="img/logo.png" alt="logo" class="logo">
+                                </a>
+                            </div>
+                            <div class="burger__close" id="burger" onclick="closeMenu()"></div>
+                        </div>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar">
+                        <ul class="ul-sidebar__menu ul-sidebar__menu-contact">
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:0 800 750 643" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    0 800 750 643
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:+380 44 334 56 43" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    +380 44 334 56 43
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:+380 44 334 56 43" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    +380 44 338 86 43
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-ul-sidebar__menu-contact">
+                        <div class="wrapper-sidebar wrapper-sidebar__btn">
+                            <button class="btn-white btn-white__sidebar">
+                                Вход
+                            </button>
+                            <button class="btn-blue btn-blue__sidebar">
+                                Регистрация
+                            </button>
+                        </div>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-line__sidebar">
+                        <ul class="ul-sidebar__menu">
+                            <li class="li-sidebar__menu">
+                                <a href="about.html" target="_blank" class="element-sidebar__menu">
+                                    про нас
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="blog.html" class="element-sidebar__menu">
+                                    блог
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="videos.html" target="_blank" class="element-sidebar__menu">
+                                    видео
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="FAQ.html" target="_blank" class="element-sidebar__menu">
+                                    вопросы
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="error.html" class="element-sidebar__menu">
+                                    цены
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="contacts.html" target="_blank" class="element-sidebar__menu">
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-line__sidebar">
+                        <ul class="ul-language__sidebar">
+                            <li class="li-language__sidebar">
+                                <a href="#" class="element-sidebar__menu element-language__sidebar">
+                                    укр
+                                </a>
+                            </li>
+                            <li class="li-language__sidebar">
+                                <a href="#" class="element-sidebar__menu element-language__sidebar">
+                                    рус
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="road">
+        <div class="container">
+            <p class="contant-road">
+                Signy / Блог
+            </p>
+        </div>
+    </section>
+    <section class="articles">
+        <div class="container">
+            <h1 class="title__main-article">
+                Интересно пишем про
+            </h1>
+            <div class="wrapper__main-article">
+                <img src="img/blog__img/main-arcticle.jpg" alt="img" class="img__main-article">
+                <div class="construction__main-article">
+                    <p class="data__main-article">
+                        28.05.2020
+                    </p>
+                    <h2 class="title-construction__main-article">
+                        Burn Calories Quicker in 30 Min.
+                    </h2>
+                    <div class="wrapper-tags__main-article">
+                        <div class="tag__main-article">
+                            <p class="content-tag__main-article">
+                                про продукт
+                            </p>
+                        </div>
+                        <div class="tag__main-article">
+                            <p class="content-tag__main-article">
+                                теги
+                            </p>
+                        </div>
+                        <div class="tag__main-article">
+                            <p class="content-tag__main-article">
+                                много тегов
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrapper-content__main-article">
+                        <p class="content__main-article">
+                            Идейные соображения высшего порядка, а также укрепление и развитие структуры играет важную
+                            роль в формировании существенных финансовых и административных условий.
+                        </p>
+                        <p class="content__main-article content__main-article__last">
+                            Не следует, однако забывать, что дальнейшее развитие различных форм деятельности
+                            способствует подготовки и реализации форм развития.
+                        </p>
+                    </div>
+                    <a href="#" class="link-read__main-article">
+                        читать
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <ul class="ul__nav-catalog">
+                <li class="li__nav-catalog li__nav-catalog__active">
+                    <a href="#" class="element__nav-catalog">
+                        все
+                    </a>
+                </li>
+                <li class="li__nav-catalog">
+                    <a href="#" class="element__nav-catalog">
+                        новости
+                    </a>
+                </li>
+                <li class="li__nav-catalog">
+                    <a href="#" class="element__nav-catalog">
+                        обучение
+                    </a>
+                </li>
+                <li class="li__nav-catalog">
+                    <a href="#" class="element__nav-catalog">
+                        законы
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-nav__catalog">
+                <button id="btn__nav-catalog" onclick="openMobileMenu()">
+                    все
+                    <button>
+            </div>
+            <ul id="ul-mobile__nav-catalog">
+                <li class="li-mobile__nav-catalog">
+                    <a href="#" class="element-mobile__nav-catalog">
+                        новости
+                    </a>
+                </li>
+                <li class="li-mobile__nav-catalog">
+                    <a href="#" class="element-mobile__nav-catalog">
+                        обучение
+                    </a>
+                </li>
+                <li class="li-mobile__nav-catalog">
+                    <a href="#" class="element-mobile__nav-catalog">
+                        законы
+                    </a>
+                </li>
+            </ul>
+            <div class="wrapper__card-article top-wrapper__card-article">
+                <a href="blog_post.html" target="_blank" class="link__card-article">
+                    <div class="card-article">
+                        <img src="img/blog__img/article1.png" alt="img" class="img__card-article">
+                        <p class="data__card-article">
+                            05.03.2020
+                        </p>
+                        <h3 class="title__card-article">
+                            Burn Calories Quicker in 30 Min.
+                        </h3>
+                        <div class="wrapper-tags__main-article tags__catalog">
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    про продукт
+                                </p>
+                            </div>
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    теги
+                                </p>
+                            </div>
+                        </div>
+                        <p class="content__card-article">
+                            Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности.
+                        </p>
+                    </div>
+                </a>
+                <a href="blog_post.html" target="_blank" class="link__card-article">
+                    <div class="card-article">
+                        <img src="img/blog__img/article2.png" alt="img" class="img__card-article">
+                        <p class="data__card-article">
+                            05.03.2020
+                        </p>
+                        <h3 class="title__card-article">
+                            Burn Calories Quicker in 30 Min.
+                        </h3>
+                        <div class="wrapper-tags__main-article tags__catalog">
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    про продукт
+                                </p>
+                            </div>
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    теги
+                                </p>
+                            </div>
+                        </div>
+                        <p class="content__card-article">
+                            Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности.
+                        </p>
+                    </div>
+                </a>
+                <a href="blog_post.html" target="_blank" class="link__card-article">
+                    <div class="card-article">
+                        <img src="img/blog__img/article3.png" alt="img" class="img__card-article">
+                        <p class="data__card-article">
+                            05.03.2020
+                        </p>
+                        <h3 class="title__card-article">
+                            Burn Calories Quicker in 30 Min.
+                        </h3>
+                        <div class="wrapper-tags__main-article tags__catalog">
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    про продукт
+                                </p>
+                            </div>
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    теги
+                                </p>
+                            </div>
+                        </div>
+                        <p class="content__card-article">
+                            Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper__card-article">
+                <a href="blog_post.html" target="_blank" class="link__card-article">
+                    <div class="card-article">
+                        <img src="img/blog__img/article1.png" alt="img" class="img__card-article">
+                        <p class="data__card-article">
+                            05.03.2020
+                        </p>
+                        <h3 class="title__card-article">
+                            Burn Calories Quicker in 30 Min.
+                        </h3>
+                        <div class="wrapper-tags__main-article tags__catalog">
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    про продукт
+                                </p>
+                            </div>
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    теги
+                                </p>
+                            </div>
+                        </div>
+                        <p class="content__card-article">
+                            Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности.
+                        </p>
+                    </div>
+                </a>
+                <a href="blog_post.html" target="_blank" class="link__card-article">
+                    <div class="card-article">
+                        <img src="img/blog__img/article2.png" alt="img" class="img__card-article">
+                        <p class="data__card-article">
+                            05.03.2020
+                        </p>
+                        <h3 class="title__card-article">
+                            Burn Calories Quicker in 30 Min.
+                        </h3>
+                        <div class="wrapper-tags__main-article tags__catalog">
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    про продукт
+                                </p>
+                            </div>
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    теги
+                                </p>
+                            </div>
+                        </div>
+                        <p class="content__card-article">
+                            Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности.
+                        </p>
+                    </div>
+                </a>
+                <a href="blog_post.html" target="_blank" class="link__card-article">
+                    <div class="card-article">
+                        <img src="img/blog__img/article3.png" alt="img" class="img__card-article">
+                        <p class="data__card-article">
+                            05.03.2020
+                        </p>
+                        <h3 class="title__card-article">
+                            Burn Calories Quicker in 30 Min.
+                        </h3>
+                        <div class="wrapper-tags__main-article tags__catalog">
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    про продукт
+                                </p>
+                            </div>
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    теги
+                                </p>
+                            </div>
+                        </div>
+                        <p class="content__card-article">
+                            Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper__card-article">
+                <a href="blog_post.html" target="_blank" class="link__card-article">
+                    <div class="card-article">
+                        <img src="img/blog__img/article1.png" alt="img" class="img__card-article">
+                        <p class="data__card-article">
+                            05.03.2020
+                        </p>
+                        <h3 class="title__card-article">
+                            Burn Calories Quicker in 30 Min.
+                        </h3>
+                        <div class="wrapper-tags__main-article tags__catalog">
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    про продукт
+                                </p>
+                            </div>
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    теги
+                                </p>
+                            </div>
+                        </div>
+                        <p class="content__card-article">
+                            Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности.
+                        </p>
+                    </div>
+                </a>
+                <a href="blog_post.html" target="_blank" class="link__card-article">
+                    <div class="card-article">
+                        <img src="img/blog__img/article2.png" alt="img" class="img__card-article">
+                        <p class="data__card-article">
+                            05.03.2020
+                        </p>
+                        <h3 class="title__card-article">
+                            Burn Calories Quicker in 30 Min.
+                        </h3>
+                        <div class="wrapper-tags__main-article tags__catalog">
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    про продукт
+                                </p>
+                            </div>
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    теги
+                                </p>
+                            </div>
+                        </div>
+                        <p class="content__card-article">
+                            Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности.
+                        </p>
+                    </div>
+                </a>
+                <a href="blog_post.html" target="_blank" class="link__card-article">
+                    <div class="card-article">
+                        <img src="img/blog__img/article3.png" alt="img" class="img__card-article">
+                        <p class="data__card-article">
+                            05.03.2020
+                        </p>
+                        <h3 class="title__card-article">
+                            Burn Calories Quicker in 30 Min.
+                        </h3>
+                        <div class="wrapper-tags__main-article tags__catalog">
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    про продукт
+                                </p>
+                            </div>
+                            <div class="tag__main-article">
+                                <p class="content-tag__main-article">
+                                    теги
+                                </p>
+                            </div>
+                        </div>
+                        <p class="content__card-article">
+                            Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper__number-catalog">
+                <ul class="ul__number-catalog">
+                    <li class="li__number-catalog">
+                        <a href="#" class="element__number-catalog active-number">
+                            01
+                        </a>
+                    </li>
+                    <li class="li__number-catalog">
+                        <a href="#" class="element__number-catalog">
+                            02
+                        </a>
+                    </li>
+                    <li class="li__number-catalog">
+                        <a href="#" class="element__number-catalog">
+                            03
+                        </a>
+                    </li>
+                    <li class="li__number-catalog">
+                        <a href="#" class="element__number-catalog">
+                            04
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn-farther">
+                    Дальше
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="block__news" id="close__window">
+                <h1 class="title__news">
+                    Подпишись на наши новости!
+                </h1>
+                <div class="input-construction">
+                    <p class="content__input-construction">
+                        Введи свой электронный адрес и будь в курсе всех обновлений
+                    </p>
+                    <form action="#" class="form__input-construction">
+                        <input type="email" placeholder="" name="email" class="input__input-construction" required>
+                        <button class="btn-blue btn__input-construction" id="btn__input">
+                            отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="construction__subscription-news" id="window__input">
+                <h1 class="title__subscription-news">
+                    Отлично!
+                </h1>
+                <p class="content__subscription-news">
+                    На адресс <span>example@maile.com</span> теперь будут приходить самые важные новости
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="show-text">
+        <div class="container">
+            <div class="wrapper-block__show-text">
+                <div class="block__show-text">
+                    <h2 class="title__show-text">
+                        SEO текст
+                    </h2>
+                    <p class="content__show-text">
+                        Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют от нас
+                        анализа существенных финансовых и административных условий. Задача организации, в особенности же
+                        укрепление и развитие структуры позволяет оценить значение новых предложений. С другой стороны
+                        постоянный количественный рост и сфера нашей активности требуют от нас анализа позиций,
+                        занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же
+                        дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке
+                        соответствующий условий активизации. Разнообразный и богатый опыт начало повседневной работы по
+                        формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании новых
+                        предложений. Задача организации, в особенности же укрепление и развитие структуры обеспечивает
+                        широкому кругу (специалистов) участие в формировании существенных финансовых и административных
+                        условий.
+                    </p>
+                    <p class="content__show-text two-content__show-text">
+                        Повседневная практика показывает, что реализация намеченных плановых заданий позволяет выполнять
+                        важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
+                        Равным образом сложившаяся структура организации позволяет
+                    </p>
+                </div>
+                <span id="more-text">
+                    <div class="block__show-text">
+                        <h2 class="title__show-text">
+                            Повседневная практика показывает
+                        </h2>
+                        <p class="content__show-text">
+                            Разнообразный и богатый опыт рамки и место обучения кадров представляет собой интересный
+                            эксперимент проверки форм развития. Повседневная практика показывает, что постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу
+                            (специалистов) участие в формировании дальнейших направлений развития. Не следует, однако
+                            забывать, что укрепление и развитие структуры позволяет оценить значение направлений
+                            прогрессивного развития. С другой стороны консультация с широким активом влечет за собой
+                            процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных
+                            задач. Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+                            сфера нашей активности в значительной степени обуславливает создание новых предложений.
+                        </p>
+                    </div>
+                    <div class="block__show-text">
+                        <h2 class="title__show-text">
+                            Реализация намеченных плановых
+                        </h2>
+                        <p class="content__show-text">
+                            Равным образом сложившаяся структура организации требуют определения и уточнения системы
+                            обучения кадров, соответствует насущным потребностям. Товарищи! консультация с широким
+                            активом влечет за собой процесс внедрения и модернизации направлений прогрессивного
+                            развития. Идейные соображения высшего порядка, а также постоянный количественный рост и
+                            сфера нашей активности позволяет выполнять важные задания по разработке соответствующий
+                            условий активизации.
+                        </p>
+                        <p class="content__show-text two-content__show-text">
+                            Значимость этих проблем настолько очевидна, что новая модель организационной деятельности
+                            способствует подготовки и реализации новых предложений. Товарищи! консультация с широким
+                            активом влечет за собой процесс внедрения и модернизации модели развития. С другой стороны
+                            рамки и место обучения кадров играет важную роль в формировании систем массового участия.
+                            Товарищи! новая модель организационной деятельности влечет за собой процесс внедрения и
+                            модернизации модели развития.
+                        </p>
+                        <p class="content__show-text two-content__show-text">
+                            С другой стороны постоянный количественный рост и сфера нашей активности позволяет выполнять
+                            важные задания по разработке форм развития. Значимость этих проблем настолько очевидна, что
+                            постоянный количественный рост и сфера нашей активности в значительной степени обуславливает
+                            создание соответствующий условий активизации. Равным образом реализация намеченных плановых
+                            заданий играет важную роль в формировании форм развития.
+                        </p>
+                    </div>
+                </span>
+                <div id="block__show"></div>
+                <button id="btn__show-text" onclick="readMore()">
+                    Развернуть
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper__footer top">
+                <div class="block-logo">
+                    <a href="index.html" target="_blank" class="element__block-logo">
+                        <img src="img/logo__footer.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="menu__footer column-one">
+                    <ul class="ul-menu__footer">
+                        <li class="li-menu__footer">
+                            <a href="blog.html" target="_blank" class="element-menu__footer">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="error.html" class="element-menu__footer">
+                                Цены
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-menu__footer blog-contacts">
+                        <li class="li-menu__footer">
+                            <a href="blog.html" class="element-menu__footer">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="contacts.html" target="_blank" class="element-menu__footer">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    </ul>
+                    <ul class="ul-menu__footer profile">
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Вход
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__footer column-two">
+                    <ul class="ul-menu__footer inform">
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                infosmartsign@smarttender.biz
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-menu__footer">
+                        <li class="li-menu__footer li-gray">
+                            <a href="#" class="element-menu__footer el-gray">
+                                пр-т Миколи Бажана, 14 А
+                                Київ, 02072
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:0 800 750643" class="element-menu__footer el-gray">
+                                0 800 750643
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:+380 44 334 56 43" class="element-menu__footer el-gray">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:+380 44 334 56 43" class="element-menu__footer el-gray">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="up__footer">
+                    <img src="img/arrow__top.png" alt="arrow" class="img-up__footer">
+                </div>
+            </div>
+            <div class="wrapper__footer bottom">
+                <p class="content-logo__footer">
+                    © 2020 Signy
+                </p>
+                <ul class="ul-footer__bottom">
+                    <li class="li-footer__bottom">
+                        <a href="#" class="element-footer__bottom">
+                            Договір оферти
+                        </a>
+                    </li>
+                    <li class="li-footer__bottom">
+                        <a href="#" class="element-footer__bottom">
+                            Безпека сервісу
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/blog.js/mobile-catalog.js"></script>
+    <script src="js/blog.js/showText.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

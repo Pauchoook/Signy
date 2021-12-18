@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Signy</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper-header">
+                <div class="block-logo">
+                    <a href="index.html" class="element__block-logo">
+                        <img src="img/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <ul class="ul__header-menu">
+                        <li class="li__header-menu numbers" id="li__header-menu__number" onclick="openNumber()">
+                            <a href="tel:0 800 750 643" class="element__header-menu">
+                                0 800 750 643
+                            </a>
+                            <div class="arrow__header-menu" id="arrow__header-menu-number"></div>
+                        </li>
+                        <li class="li__header-menu our" id="li__header-menu__our" onclick="openOur()">
+                            <a href="about.html" target="_blank" class="element__header-menu">
+                                про нас
+                            </a>
+                            <div class="arrow__header-menu" id="arrow__header-menu-our"></div>
+                        </li>
+                        <li class="li__header-menu">
+                            <a href="error.html" class="element__header-menu">
+                                цены
+                            </a>
+                        </li>
+                        <li class="li__header-menu">
+                            <a href="contacts.html" target="_blank" class="element__header-menu">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-number" id="ul-number">
+                        <li class="li-our">
+                            <a href="tel:+380 44 334 56 43" class="element-our">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="tel:+380 44 334 56 43" class="element-our">
+                                +380 44 338 86 43
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-our" id="ul-our">
+                        <li class="li-our">
+                            <a href="blog.html" target="_blank" class="element-our">
+                                блог
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="videos.html" target="_blank" class="element-our">
+                                видео
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="FAQ.html" target="_blank" class="element-our">
+                                вопросы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btns-header">
+                    <button class="btn-white btn-come">
+                        Вход
+                    </button>
+                    <button class="btn-blue btn-registration">
+                        регистрация
+                    </button>
+                </div>
+                <div class="language">
+                    <a href="#" class="element__language">
+                        рус
+                    </a>
+                    <img src="img/arrow-menu.png" alt="" class="arrow__language">
+                </div>
+                <div id="sidebar">
+                    <div class="burger" id="burger" onclick="openMenu()"></div>
+                    <div class="container__sidebar">
+                        <div class="wrapper-sidebar">
+                            <div class="block-logo">
+                                <a href="index.html" class="element__block-logo">
+                                    <img src="img/logo.png" alt="logo" class="logo">
+                                </a>
+                            </div>
+                            <div class="burger__close" id="burger" onclick="closeMenu()"></div>
+                        </div>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar">
+                        <ul class="ul-sidebar__menu ul-sidebar__menu-contact">
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:0 800 750 643" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    0 800 750 643
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:+380 44 334 56 43" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    +380 44 334 56 43
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:+380 44 334 56 43" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    +380 44 338 86 43
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-ul-sidebar__menu-contact">
+                        <div class="wrapper-sidebar wrapper-sidebar__btn">
+                            <button class="btn-white btn-white__sidebar">
+                                Вход
+                            </button>
+                            <button class="btn-blue btn-blue__sidebar">
+                                Регистрация
+                            </button>
+                        </div>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-line__sidebar">
+                        <ul class="ul-sidebar__menu">
+                            <li class="li-sidebar__menu">
+                                <a href="about.html" target="_blank" class="element-sidebar__menu">
+                                    про нас
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="blog.html" target="_blank" class="element-sidebar__menu">
+                                    блог
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="videos.html" target="_blank" class="element-sidebar__menu">
+                                    видео
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="FAQ.html" target="_blank" class="element-sidebar__menu">
+                                    вопросы
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="error.html" class="element-sidebar__menu">
+                                    цены
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="contacts.html" target="_blank" class="element-sidebar__menu">
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-line__sidebar">
+                        <ul class="ul-language__sidebar">
+                            <li class="li-language__sidebar">
+                                <a href="#" class="element-sidebar__menu element-language__sidebar">
+                                    укр
+                                </a>
+                            </li>
+                            <li class="li-language__sidebar">
+                                <a href="#" class="element-sidebar__menu element-language__sidebar">
+                                    рус
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider__item">
+                    <div class="content-header">
+                        <div class="title__content-header">
+                            Цифровой документооборот в три этапа:
+                        </div>
+                        <div class="numbers-slider__content-header">
+                            <p class="number-slider active-number">
+                                1
+                            </p>
+                            <img src="img/line-numbers.png" alt="" class="line-number">
+                            <p class="number-slider">
+                                2
+                            </p>
+                            <img src="img/line-numbers.png" alt="" class="line-number">
+                            <p class="number-slider">
+                                3
+                            </p>
+                        </div>
+                        <div class="content-slider">
+                            <p class="condition">
+                                Быстрая регистрация
+                            </p>
+                            <p class="content-condition">
+                                Мы создали, возможно, самую простую регистрацию. Регистрируйся, получай полный доступ к
+                                сервису и 1000 подписей документов в подарок!
+                            </p>
+                            <button class="btn-blue btn-slider">
+                                Попробовать Бесплатно
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="content-header">
+                        <div class="title__content-header">
+                            Цифровой документооборот в три этапа:
+                        </div>
+                        <div class="numbers-slider__content-header">
+                            <p class="number-slider">
+                                1
+                            </p>
+                            <img src="img/line-numbers.png" alt="" class="line-number">
+                            <p class="number-slider active-number">
+                                2
+                            </p>
+                            <img src="img/line-numbers.png" alt="" class="line-number">
+                            <p class="number-slider">
+                                3
+                            </p>
+                        </div>
+                        <div class="content-slider">
+                            <p class="condition">
+                                Загрузи документ
+                            </p>
+                            <p class="content-condition content-condition__two">
+                                Загружай в систему любой документ которые надо подписать, договор, акт выполненных
+                                работ, <br class="condition-two">
+                                да что угодно
+                            </p>
+                            <button class="btn-blue btn-slider">
+                                Попробовать Бесплатно
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="content-header">
+                        <div class="title__content-header">
+                            Цифровой документооборот в три этапа:
+                        </div>
+                        <div class="numbers-slider__content-header">
+                            <p class="number-slider">
+                                1
+                            </p>
+                            <img src="img/line-numbers.png" alt="" class="line-number">
+                            <p class="number-slider">
+                                2
+                            </p>
+                            <img src="img/line-numbers.png" alt="" class="line-number">
+                            <p class="number-slider active-number">
+                                3
+                            </p>
+                        </div>
+                        <div class="content-slider">
+                            <p class="condition">
+                                Подпиши и отправь
+                            </p>
+                            <p class="content-condition content-condition__three">
+                                Подписывай своей электронно-цифровой подписью и за долю секунды отправь партнеру или
+                                компании. <br class="condition-three">
+                                Он подписывает в ответ и все! Готово!
+                            </p>
+                            <button class="btn-blue btn-slider">
+                                Попробовать Бесплатно
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="js/slick.min.js"></script>
+            <script src="js/slider.js"></script>
+        </div>
+    </header>
+    <section class="peculiarity">
+        <div class="container">
+            <div class="carts-peculiarity">
+                <div class="cart-peculiarity">
+                    <img src="img/speed.png" alt="" class="img__cart-peculiarity">
+                    <div class="content__cart-peculiarity">
+                        <h3 class="title__cart-peculiarity">
+                            Моментально
+                        </h3>
+                        <p class="text__cart-peculiarity first__text__cart-peculiarity">
+                            Никаких задержек. <br class="br-text__cart-peculiarity">
+                            1 секунда на подписание
+                        </p>
+                    </div>
+                </div>
+                <div class="cart-peculiarity">
+                    <img src="img/like.png" alt="" class="img__cart-peculiarity">
+                    <div class="content__cart-peculiarity">
+                        <h3 class="title__cart-peculiarity">
+                            Глобально
+                        </h3>
+                        <p class="text__cart-peculiarity">
+                            Сервис доступен 24\7 <br class="br-text__cart-peculiarity">
+                            со всех устройств
+                        </p>
+                    </div>
+                </div>
+                <div class="cart-peculiarity">
+                    <img src="img/like.png" alt="" class="img__cart-peculiarity">
+                    <div class="content__cart-peculiarity">
+                        <h3 class="title__cart-peculiarity">
+                            Экономно
+                        </h3>
+                        <p class="text__cart-peculiarity">
+                            В 30 раз дешевле чем <br class="br-text__cart-peculiarity">
+                            почта и курьеры
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="conditions-work">
+        <div class="container">
+            <div class="wrapper__conditions-work">
+                <div class="construction__conditions-work">
+                    <h1 class="title-construction__conditions-work">
+                        Комфорт в работе
+                    </h1>
+                    <div class="points">
+                        <div class="point">
+                            <p class="hyphen__point">
+                                -
+                            </p>
+                            <p class="text__point">
+                                Создавай документы по твоим личным привычным шаблонам. Это индивидуально!
+                            </p>
+                        </div>
+                        <div class="point">
+                            <p class="hyphen__point">
+                                -
+                            </p>
+                            <p class="text__point">
+                                Настраивай порядок подписание документа, если вас несколько человек. Это ответственно!
+                            </p>
+                        </div>
+                        <div class="point">
+                            <p class="hyphen__point">
+                                -
+                            </p>
+                            <p class="text__point">
+                                Загружай XML файл с собственным шаблоном готового документа. Это удобно!
+                            </p>
+                        </div>
+                        <div class="point">
+                            <p class="hyphen__point">
+                                -
+                            </p>
+                            <p class="text__point">
+                                Работай в супер простом и понятном интерфейсе без сложностей. Это приятно!
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn-white btn__conditions-work">
+                        Узнать больше
+                    </button>
+                </div>
+                <div class="block-img__conditions-work">
+                    <img src="img/img__conditions-work.jpg" alt="img" class="img__conditions-work">
+                </div>
+            </div>
+            <div class="wrapper__conditions-work">
+                <div class="block-img__conditions-work last__block-img__conditions-work">
+                    <img src="img/img__conditions-work.jpg" alt="img" class="img__conditions-work">
+                </div>
+                <div class="construction__conditions-work">
+                    <h1 class="title-construction__conditions-work">
+                        Наш продукт это:
+                    </h1>
+                    <div class="points">
+                        <div class="point">
+                            <p class="hyphen__point">
+                                -
+                            </p>
+                            <p class="text__point">
+                                Web версия без установки программного обеспечения
+                            </p>
+                        </div>
+                        <div class="point">
+                            <p class="hyphen__point">
+                                -
+                            </p>
+                            <p class="text__point">
+                                Возможность бесплатно и безлимитно обрабатывать входящие документы
+                            </p>
+                        </div>
+                        <div class="point">
+                            <p class="hyphen__point">
+                                -
+                            </p>
+                            <p class="text__point">
+                                Простота интеграции с 1С и другими сервисами
+                            </p>
+                        </div>
+                        <div class="point">
+                            <p class="hyphen__point">
+                                -
+                            </p>
+                            <p class="text__point">
+                                Поддержка входа через Mobile ID
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn-blue btn__conditions-work btn__last-conditions">
+                        Зарегистрироваться
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="digital-signatures">
+        <div class="container">
+            <h1 class="title__digital-signatures">
+                Пакеты цифровых подписей
+            </h1>
+            <div class="carts__digital-signatures">
+                <div class="cart__digital-signatures">
+                    <div class="content-cart__digital-signatures">
+                        <h3 class="name-cart__digital-signatures">
+                            Demo
+                        </h3>
+                        <p class="number-documents__digital-signatures">
+                            30 документів
+                        </p>
+                        <div class="sum__digital-signatures">
+                            <p class="number-sum__digital-signatures">
+                                0
+                            </p>
+                            <p class="currency-sum__digital-signatures">
+                                грн/місяць
+                            </p>
+                        </div>
+                        <button class="btn-blue btn-cart__digital-signatures">
+                            Зарегистрироваться
+                        </button>
+                    </div>
+                </div>
+                <div class="cart__digital-signatures">
+                    <div class="content-cart__digital-signatures">
+                        <h3 class="name-cart__digital-signatures">
+                            Business
+                        </h3>
+                        <p class="number-documents__digital-signatures">
+                            1 000 документів
+                        </p>
+                        <div class="sum__digital-signatures">
+                            <p class="number-sum__digital-signatures">
+                                1 000
+                            </p>
+                            <p class="currency-sum__digital-signatures">
+                                грн/рік
+                            </p>
+                        </div>
+                        <button class="btn-blue btn-cart__digital-signatures">
+                            Закакзать
+                        </button>
+                    </div>
+                </div>
+                <div class="cart__digital-signatures">
+                    <div class="content-cart__digital-signatures">
+                        <h3 class="name-cart__digital-signatures">
+                            Pro
+                        </h3>
+                        <p class="number-documents__digital-signatures">
+                            10 000 документів
+                        </p>
+                        <div class="sum__digital-signatures">
+                            <p class="number-sum__digital-signatures">
+                                9 000
+                            </p>
+                            <p class="currency-sum__digital-signatures">
+                                грн/рік
+                            </p>
+                        </div>
+                        <button class="btn-blue btn-cart__digital-signatures">
+                            Закакзать
+                        </button>
+                    </div>
+                </div>
+                <div class="cart__digital-signatures">
+                    <div class="content-cart__digital-signatures">
+                        <h3 class="name-cart__digital-signatures">
+                            Individual
+                        </h3>
+                        <p class="number-documents__digital-signatures number-individual">
+                            Необмежена кількість документів
+                        </p>
+                        <button class="btn-blue btn-cart__digital-signatures btn-individual">
+                            Связаться с нами
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="signatures">
+        <div class="container">
+            <div class="block-signatures">
+                <p class="number__signatures">
+                    5 820 125 114
+                </p>
+                <h1 class="docs__signatures">
+                    подписано документов
+                </h1>
+                <p class="content__signatures">
+                    Наша компания уже более 30 лет создает удобные решения для бизнеса любого размера. Мы гордимся Signy
+                    как безопасным и комфортным продуктом
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="logos-slider">
+        <div class="container">
+            <h1 class="title__logos-slider">
+                Друзья Signy
+            </h1>
+            <div class="wrapper-sliders">
+                <div class="slider two">
+                    <div class="slider__item two">
+                        <img src="img/image 1.png" alt="" class="logo__slider">
+                        <img src="img/image 2.png" alt="" class="logo__slider">
+                        <img src="img/image 3.png" alt="" class="logo__slider">
+                        <img src="img/image 4.png" alt="" class="logo__slider">
+                    </div>
+                    <div class="slider__item two">
+                        <img src="img/image 1.png" alt="" class="logo__slider">
+                        <img src="img/image 2.png" alt="" class="logo__slider">
+                        <img src="img/image 3.png" alt="" class="logo__slider">
+                        <img src="img/image 4.png" alt="" class="logo__slider">
+                    </div>
+                    <div class="slider__item two">
+                        <img src="img/image 1.png" alt="" class="logo__slider">
+                        <img src="img/image 2.png" alt="" class="logo__slider">
+                        <img src="img/image 3.png" alt="" class="logo__slider">
+                        <img src="img/image 4.png" alt="" class="logo__slider">
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="js/slick.min.js"></script>
+                <script src="js/sliderTwo.js"></script>
+            </div>
+        </div>
+    </section>
+    <section class="interest">
+        <div class="container">
+            <h1 class="title__interest">
+                Интересно пишем про
+            </h1>
+            <div class="wrapper-carts__interest">
+                <div class="cart__interest">
+                    <img src="img/int1.png" alt="img" class="img-cart__interest">
+                    <p class="data-cart__interest">
+                        28.05.2020
+                    </p>
+                    <h3 class="title-cart__interest">
+                        Заголовок короткий в две строки
+                    </h3>
+                </div>
+                <div class="cart__interest">
+                    <img src="img/int2.png" alt="img" class="img-cart__interest">
+                    <p class="data-cart__interest">
+                        28.05.2020
+                    </p>
+                    <h3 class="title-cart__interest">
+                        Заголовок короткий в две строки
+                    </h3>
+                </div>
+                <div class="cart__interest">
+                    <img src="img/int1.png" alt="img" class="img-cart__interest">
+                    <p class="data-cart__interest">
+                        28.05.2020
+                    </p>
+                    <h3 class="title-cart__interest">
+                        Заголовок короткий в две строки
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video">
+        <div class="container">
+            <h1 class="title__video">
+                Познакомимся в живую?
+            </h1>
+            <div class="video__block">
+                <video poster="img/video__poster.png" controls class="video__item">
+                    <source src="videos/forest.webm" type="video/webm">
+                    <source src="videos/forest.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container">
+            <div class="wrapper__questions">
+                <h1 class="title__questions">
+                    Популярные вопросы и ответы на них
+                </h1>
+                <div class="block__spoilers one">
+                    <div class="spoiler__item">
+                        <div class="block-title__spoiler">
+                            <div class="cross__spoiler"></div>
+                            <div class="title__spoiler">
+                                <p class="text-title__spoiler">
+                                    Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-spoiler__text">
+                            - Углы позволяют защитить столь любимую нами пиццу от механических повреждений.
+                        </div>
+                    </div>
+                    <div class="spoiler__item">
+                        <div class="block-title__spoiler">
+                            <div class="cross__spoiler"></div>
+                            <div class="title__spoiler">
+                                <p class="text-title__spoiler">
+                                    Почему после ремонта дорога опять проваливается?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-spoiler__text">
+                            - Потому что делают ее без соблюдения технологических процессов.
+                        </div>
+                    </div>
+                    <div class="spoiler__item">
+                        <div class="block-title__spoiler">
+                            <div class="cross__spoiler"></div>
+                            <div class="title__spoiler">
+                                <p class="text-title__spoiler">
+                                    Почему вода мокрая?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-spoiler__text">
+                            - Потому что пребывает в одном из трех агрегатных состояний.
+                        </div>
+                    </div>
+                    <div class="spoiler__item">
+                        <div class="block-title__spoiler">
+                            <div class="cross__spoiler"></div>
+                            <div class="title__spoiler">
+                                <p class="text-title__spoiler">
+                                    Видят ли микробы друг друга?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-spoiler__text">
+                            - Нет, микробы не смогли бы видеть своих собратьев.
+                        </div>
+                    </div>
+                    <div class="spoiler__item">
+                        <div class="block-title__spoiler">
+                            <div class="cross__spoiler"></div>
+                            <div class="title__spoiler">
+                                <p class="text-title__spoiler">
+                                    Почему кровь красная а вены синие?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-spoiler__text">
+                            - Потому что большое количество оксигена в взаимодействии с гемоглобином дает ярко-красный
+                            цвет крови, а малое, как у вен, наоборот, темно-красный с синим оттенком.
+                        </div>
+                    </div>
+                    <div class="spoiler__item">
+                        <div class="block-title__spoiler">
+                            <div class="cross__spoiler"></div>
+                            <div class="title__spoiler">
+                                <p class="text-title__spoiler">
+                                    Из чего сделана радуга?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-spoiler__text">
+                            - Радуга возникает из-за того, что солнечный свет преломляется и отражается капельками воды
+                            (дождя или тумана), парящими в атмосфере.
+                        </div>
+                    </div>
+                </div>
+                <script src="js/spoiler.js"></script>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="block__news" id="close__window">
+                <h1 class="title__news">
+                    Подпишись на наши новости!
+                </h1>
+                <div class="input-construction">
+                    <p class="content__input-construction">
+                        Введи свой электронный адрес и будь в курсе всех обновлений
+                    </p>
+                    <form action="#" class="form__input-construction">
+                        <input type="email" placeholder="" name="email" class="input__input-construction" required>
+                        <button class="btn-blue btn__input-construction" id="btn__input">
+                            отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="construction__subscription-news" id="window__input">
+                <h1 class="title__subscription-news">
+                    Отлично!
+                </h1>
+                <p class="content__subscription-news">
+                    На адресс <span>example@maile.com</span> теперь будут приходить самые важные новости
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper__footer top">
+                <div class="block-logo">
+                    <a href="index.html" class="element__block-logo">
+                        <img src="img/logo__footer.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="menu__footer column-one">
+                    <ul class="ul-menu__footer">
+                        <li class="li-menu__footer">
+                            <a href="blog.html" target="_blank" class="element-menu__footer">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="error.html" class="element-menu__footer">
+                                Цены
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-menu__footer blog-contacts">
+                        <li class="li-menu__footer">
+                            <a href="blog.html" target="_blank" class="element-menu__footer">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="contacts.html" target="_blank" class="element-menu__footer">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    </ul>
+                    <ul class="ul-menu__footer profile">
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Вход
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__footer column-two">
+                    <ul class="ul-menu__footer inform">
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                infosmartsign@smarttender.biz
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-menu__footer">
+                        <li class="li-menu__footer li-gray">
+                            <a href="#" class="element-menu__footer el-gray">
+                                пр-т Миколи Бажана, 14 А
+                                Київ, 02072
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:0 800 750643" class="element-menu__footer el-gray">
+                                0 800 750643
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:+380 44 334 56 43" class="element-menu__footer el-gray">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:+380 44 334 56 43" class="element-menu__footer el-gray">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="up__footer">
+                    <img src="img/arrow__top.png" alt="arrow" class="img-up__footer">
+                </div>
+            </div>
+            <div class="wrapper__footer bottom">
+                <p class="content-logo__footer">
+                    © 2020 Signy
+                </p>
+                <ul class="ul-footer__bottom">
+                    <li class="li-footer__bottom">
+                        <a href="#" class="element-footer__bottom">
+                            Договір оферти
+                        </a>
+                    </li>
+                    <li class="li-footer__bottom">
+                        <a href="#" class="element-footer__bottom">
+                            Безпека сервісу
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

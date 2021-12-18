@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/FAQ.css">
+    <title>Signy</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper-header">
+                <div class="block-logo">
+                    <a href="index.html" target="_blank" class="element__block-logo">
+                        <img src="img/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <ul class="ul__header-menu">
+                        <li class="li__header-menu numbers" id="li__header-menu__number" onclick="openNumber()">
+                            <a href="tel:0 800 750 643" class="element__header-menu">
+                                0 800 750 643
+                            </a>
+                            <div class="arrow__header-menu" id="arrow__header-menu-number"></div>
+                        </li>
+                        <li class="li__header-menu our" id="li__header-menu__our" onclick="openOur()">
+                            <a href="about.html" target="_blank" class="element__header-menu">
+                                про нас
+                            </a>
+                            <div class="arrow__header-menu" id="arrow__header-menu-our"></div>
+                        </li>
+                        <li class="li__header-menu">
+                            <a href="error.html" class="element__header-menu">
+                                цены
+                            </a>
+                        </li>
+                        <li class="li__header-menu">
+                            <a href="contacts.html" target="_blank" class="element__header-menu">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-number" id="ul-number">
+                        <li class="li-our">
+                            <a href="tel:+380 44 334 56 43" class="element-our">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="tel:+380 44 334 56 43" class="element-our">
+                                +380 44 338 86 43
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-our" id="ul-our">
+                        <li class="li-our">
+                            <a href="blog.html" target="_blank" class="element-our">
+                                блог
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="videos.html" class="element-our">
+                                видео
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="FAQ.html" target="_blank" class="element-our">
+                                вопросы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btns-header">
+                    <button class="btn-white btn-come">
+                        Вход
+                    </button>
+                    <button class="btn-blue btn-registration">
+                        регистрация
+                    </button>
+                </div>
+                <div class="language">
+                    <a href="#" class="element__language">
+                        рус
+                    </a>
+                    <img src="img/arrow-menu.png" alt="" class="arrow__language">
+                </div>
+                <div id="sidebar">
+                    <div class="burger" id="burger" onclick="openMenu()"></div>
+                    <div class="container__sidebar">
+                        <div class="wrapper-sidebar">
+                            <div class="block-logo">
+                                <a href="index.html" target="_blank" class="element__block-logo">
+                                    <img src="img/logo.png" alt="logo" class="logo">
+                                </a>
+                            </div>
+                            <div class="burger__close" id="burger" onclick="closeMenu()"></div>
+                        </div>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar">
+                        <ul class="ul-sidebar__menu ul-sidebar__menu-contact">
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:0 800 750 643" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    0 800 750 643
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:+380 44 334 56 43"
+                                    class="element-sidebar__menu element-sidebar__menu-contact">
+                                    +380 44 334 56 43
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:+380 44 334 56 43"
+                                    class="element-sidebar__menu element-sidebar__menu-contact">
+                                    +380 44 338 86 43
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-ul-sidebar__menu-contact">
+                        <div class="wrapper-sidebar wrapper-sidebar__btn">
+                            <button class="btn-white btn-white__sidebar">
+                                Вход
+                            </button>
+                            <button class="btn-blue btn-blue__sidebar">
+                                Регистрация
+                            </button>
+                        </div>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-line__sidebar">
+                        <ul class="ul-sidebar__menu">
+                            <li class="li-sidebar__menu">
+                                <a href="about.html" target="_blank" class="element-sidebar__menu">
+                                    про нас
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="blog.html" target="_blank" class="element-sidebar__menu">
+                                    блог
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="videos.html" target="_blank" class="element-sidebar__menu">
+                                    видео
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="FAQ.html" class="element-sidebar__menu">
+                                    вопросы
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="error.html" class="element-sidebar__menu">
+                                    цены
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="contacts.html" target="_blank" class="element-sidebar__menu">
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-line__sidebar">
+                        <ul class="ul-language__sidebar">
+                            <li class="li-language__sidebar">
+                                <a href="#" class="element-sidebar__menu element-language__sidebar">
+                                    укр
+                                </a>
+                            </li>
+                            <li class="li-language__sidebar">
+                                <a href="#" class="element-sidebar__menu element-language__sidebar">
+                                    рус
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="road">
+        <div class="container">
+            <p class="content__road">
+                Signy / Популярные вопросы
+            </p>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container">
+            <h1 class="title__questions">
+                Популярные вопросы и ответы на них
+            </h1>
+            <div class="wrapper-block__questions">
+                <div class="block__questions">
+                    <h3 class="title-block__questions">
+                        Популярные вопросы
+                    </h3>
+                    <div class="block-spoilers__questions block-spoilers__questions-first">
+                        <div class="spoiler__questions">
+                            <p class="name-spoiler__questions">
+                                Почему круглую пиццу ставят в квадратную коробку, а нарезают треугольниками?
+                            </p>
+                            <p class="open-spoiler__questions">
+                                - Углы позволяют защитить столь любимую нами пиццу от механических повреждений.
+                            </p>
+                        </div>
+                        <div class="spoiler__questions">
+                            <p class="name-spoiler__questions">
+                                Почему после ремонта дорога опять проваливается?
+                            </p>
+                            <p class="open-spoiler__questions">
+                                Потому что делают ее без соблюдения технологических процессов.
+                            </p>
+                        </div>
+                        <div class="spoiler__questions">
+                            <p class="name-spoiler__questions">
+                                Почему вода мокрая?
+                            </p>
+                            <p class="open-spoiler__questions">
+                                - Потому что пребывает в одном из трех агрегатных состояний.
+                            </p>
+                        </div>
+                        <div class="spoiler__questions">
+                            <p class="name-spoiler__questions">
+                                Видят ли микробы друг друга?
+                            </p>
+                            <p class="open-spoiler__questions">
+                                - Нет, микробы не смогли бы видеть своих собратьев.
+                            </p>
+                        </div>
+                        <div class="spoiler__questions">
+                            <p class="name-spoiler__questions">
+                                Почему кровь красная а вены синие?
+                            </p>
+                            <p class="open-spoiler__questions">
+                                - Потому что большое количество оксигена в взаимодействии с гемоглобином дает
+                                ярко-красный
+                                цвет крови, а малое, как у вен, наоборот, темно-красный с синим оттенком.
+                            </p>
+                        </div>
+                        <div class="spoiler__questions">
+                            <p class="name-spoiler__questions">
+                                Из чего сделана радуга?
+                            </p>
+                            <p class="open-spoiler__questions">
+                                - Радуга возникает из-за того, что солнечный свет преломляется и отражается капельками
+                                воды
+                                (дождя или тумана), парящими в атмосфере.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexbox-block__questions">
+                    <div class="block__questions">
+                        <h3 class="title-block__questions">
+                            Настройка работы в Signy
+                        </h3>
+                        <div class="block-spoilers__questions block-spoilers__questions-first">
+                            <p class="replacement">
+                                Здесь пока ничего нет :с
+                            </p>
+                        </div>
+                    </div>
+                    <p class="answers__questions">
+                        Ответов на вопросы 25
+                    </p>
+                </div>
+                <div class="flexbox-block__questions">
+                    <div class="block__questions">
+                        <h3 class="title-block__questions">
+                            Работа с документами
+                        </h3>
+                        <div class="block-spoilers__questions block-spoilers__questions-first">
+                            <p class="replacement">
+                                Здесь пока ничего нет :с
+                            </p>
+                        </div>
+                    </div>
+                    <p class="answers__questions">
+                        Ответов на вопросы 15
+                    </p>
+                </div>
+                <div class="flexbox-block__questions">
+                    <div class="block__questions">
+                        <h3 class="title-block__questions">
+                            Информация по безопасности
+                        </h3>
+                        <div class="block-spoilers__questions block-spoilers__questions-first">
+                            <p class="replacement">
+                                Здесь пока ничего нет :с
+                            </p>
+                        </div>
+                    </div>
+                    <p class="answers__questions">
+                        Ответов на вопросы 17
+                    </p>
+                </div>
+                <div class="flexbox-block__questions">
+                    <div class="block__questions">
+                        <h3 class="title-block__questions">
+                            Технические вопросы
+                        </h3>
+                        <div class="block-spoilers__questions block-spoilers__questions-first">
+                            <p class="replacement">
+                                Здесь пока ничего нет :с
+                            </p>
+                        </div>
+                    </div>
+                    <p class="answers__questions">
+                        Ответов на вопросы 16
+                    </p>
+                </div>
+                <div class="flexbox-block__questions">
+                    <div class="block__questions">
+                        <h3 class="title-block__questions">
+                            Интеграция
+                        </h3>
+                        <div class="block-spoilers__questions block-spoilers__questions-first">
+                            <p class="replacement">
+                                Здесь пока ничего нет :с
+                            </p>
+                        </div>
+                    </div>
+                    <p class="answers__questions">
+                        Ответов на вопросы 15
+                    </p>
+                </div>
+                <div class="flexbox-block__questions">
+                    <div class="block__questions">
+                        <h3 class="title-block__questions">
+                            Общие вопросы
+                        </h3>
+                        <div class="block-spoilers__questions block-spoilers__questions-first">
+                            <p class="replacement">
+                                Здесь пока ничего нет :с
+                            </p>
+                        </div>
+                    </div>
+                    <p class="answers__questions">
+                        Ответов на вопросы 57
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="separate-question">
+        <div class="container">
+            <h1 class="title__separate-question">
+                Нет ответа на интересующий вопрос?
+            </h1>
+            <p class="action__separate-question">
+                Заполни форму и наши менеджеры свяжутся с тобой
+            </p>
+            <form action="#" class="form__inputs-construction">
+                <div class="block-input__survey">
+                    <p class="name-input">
+                        Имя*:
+                    </p>
+                    <input type="Имя" placeholder="Иван" name="Имя" class="input__survey" required>
+                </div>
+                <div class="block-input__survey">
+                    <p class="name-input">
+                        Электронная почта*:
+                    </p>
+                    <input type="E-mail" placeholder="ivan@mail.com" name="E-mail" class="input__survey" required>
+                </div>
+                <div class="block-input__survey">
+                    <p class="name-input">
+                        Телефон*:
+                    </p>
+                    <input type="Number" placeholder="+38 000 000 00 00" name="Number" class="input__survey" required>
+                </div>
+                <div class="block-input__survey">
+                    <p class="name-input">
+                        Твой вопрос:
+                    </p>
+                    <input type="SMS" placeholder="Введите тут" name="SMS" class="input__survey big-input__survey"
+                        required>
+                </div>
+                <button class="btn__inputs-construction">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper__footer top">
+                <div class="block-logo">
+                    <a href="index.html" target="_blank" class="element__block-logo">
+                        <img src="img/logo__footer.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="menu__footer column-one">
+                    <ul class="ul-menu__footer">
+                        <li class="li-menu__footer">
+                            <a href="blog.html" target="_blank" class="element-menu__footer">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="error.html" class="element-menu__footer">
+                                Цены
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-menu__footer blog-contacts">
+                        <li class="li-menu__footer">
+                            <a href="blog.html" target="_blank" class="element-menu__footer">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="contacts.html" target="_blank" class="element-menu__footer">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    </ul>
+                    <ul class="ul-menu__footer profile">
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Вход
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__footer column-two">
+                    <ul class="ul-menu__footer inform">
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                infosmartsign@smarttender.biz
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-menu__footer">
+                        <li class="li-menu__footer li-gray">
+                            <a href="#" class="element-menu__footer el-gray">
+                                пр-т Миколи Бажана, 14 А
+                                Київ, 02072
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:0 800 750643" class="element-menu__footer el-gray">
+                                0 800 750643
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:+380 44 334 56 43" class="element-menu__footer el-gray">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:+380 44 334 56 43" class="element-menu__footer el-gray">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="up__footer">
+                    <img src="img/arrow__top.png" alt="arrow" class="img-up__footer">
+                </div>
+            </div>
+            <div class="wrapper__footer bottom">
+                <p class="content-logo__footer">
+                    © 2020 Signy
+                </p>
+                <ul class="ul-footer__bottom">
+                    <li class="li-footer__bottom">
+                        <a href="#" class="element-footer__bottom">
+                            Договір оферти
+                        </a>
+                    </li>
+                    <li class="li-footer__bottom">
+                        <a href="#" class="element-footer__bottom">
+                            Безпека сервісу
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/FAQ/spoilerQuestions.js"></script>
+</body>
+
+</html>

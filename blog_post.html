@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/blog_post.css">
+    <title>Signy</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper-header">
+                <div class="block-logo">
+                    <a href="index.html" target="_blank" class="element__block-logo">
+                        <img src="img/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <ul class="ul__header-menu">
+                        <li class="li__header-menu numbers" id="li__header-menu__number" onclick="openNumber()">
+                            <a href="tel:0 800 750 643" class="element__header-menu">
+                                0 800 750 643
+                            </a>
+                            <div class="arrow__header-menu" id="arrow__header-menu-number"></div>
+                        </li>
+                        <li class="li__header-menu our" id="li__header-menu__our" onclick="openOur()">
+                            <a href="about.html" target="_blank" class="element__header-menu">
+                                про нас
+                            </a>
+                            <div class="arrow__header-menu" id="arrow__header-menu-our"></div>
+                        </li>
+                        <li class="li__header-menu">
+                            <a href="error.html" class="element__header-menu">
+                                цены
+                            </a>
+                        </li>
+                        <li class="li__header-menu">
+                            <a href="contacts.html" target="_blank" class="element__header-menu">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-number" id="ul-number">
+                        <li class="li-our">
+                            <a href="tel:+380 44 334 56 43" class="element-our">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="tel:+380 44 334 56 43" class="element-our">
+                                +380 44 338 86 43
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-our" id="ul-our">
+                        <li class="li-our">
+                            <a href="blog.html" target="_blank" class="element-our">
+                                блог
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="videos.html" target="_blank" class="element-our">
+                                видео
+                            </a>
+                        </li>
+                        <li class="li-our">
+                            <a href="FAQ.html" target="_blank" class="element-our">
+                                вопросы
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btns-header">
+                    <button class="btn-white btn-come">
+                        Вход
+                    </button>
+                    <button class="btn-blue btn-registration">
+                        регистрация
+                    </button>
+                </div>
+                <div class="language">
+                    <a href="#" class="element__language">
+                        рус
+                    </a>
+                    <img src="img/arrow-menu.png" alt="" class="arrow__language">
+                </div>
+                <div id="sidebar">
+                    <div class="burger" id="burger" onclick="openMenu()"></div>
+                    <div class="container__sidebar">
+                        <div class="wrapper-sidebar">
+                            <div class="block-logo">
+                                <a href="index.html" target="_blank" class="element__block-logo">
+                                    <img src="img/logo.png" alt="logo" class="logo">
+                                </a>
+                            </div>
+                            <div class="burger__close" id="burger" onclick="closeMenu()"></div>
+                        </div>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar">
+                        <ul class="ul-sidebar__menu ul-sidebar__menu-contact">
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:0 800 750 643" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    0 800 750 643
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:+380 44 334 56 43" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    +380 44 334 56 43
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu li-sidebar__menu-contact">
+                                <a href="tel:+380 44 334 56 43" class="element-sidebar__menu element-sidebar__menu-contact">
+                                    +380 44 338 86 43
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-ul-sidebar__menu-contact">
+                        <div class="wrapper-sidebar wrapper-sidebar__btn">
+                            <button class="btn-white btn-white__sidebar">
+                                Вход
+                            </button>
+                            <button class="btn-blue btn-blue__sidebar">
+                                Регистрация
+                            </button>
+                        </div>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-line__sidebar">
+                        <ul class="ul-sidebar__menu">
+                            <li class="li-sidebar__menu">
+                                <a href="about.html" target="_blank" class="element-sidebar__menu">
+                                    про нас
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="blog.html" target="_blank" class="element-sidebar__menu">
+                                    блог
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="videos.html" target="_blank" class="element-sidebar__menu">
+                                    видео
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="FAQ.html" target="_blank" class="element-sidebar__menu">
+                                    вопросы
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="error.html" class="element-sidebar__menu">
+                                    цены
+                                </a>
+                            </li>
+                            <li class="li-sidebar__menu">
+                                <a href="contacts.html" target="_blank" class="element-sidebar__menu">
+                                    контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="img/line-sidebar.png" alt="" class="line__sidebar btn-line__sidebar">
+                        <ul class="ul-language__sidebar">
+                            <li class="li-language__sidebar">
+                                <a href="#" class="element-sidebar__menu element-language__sidebar">
+                                    укр
+                                </a>
+                            </li>
+                            <li class="li-language__sidebar">
+                                <a href="#" class="element-sidebar__menu element-language__sidebar">
+                                    рус
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="road">
+        <div class="container">
+            <p class="contant-road">
+                Signy / Блог / Burn Calories Quicker in 30 Min.
+            </p>
+        </div>
+    </section>
+    <section class="article">
+        <div class="container">
+            <div class="block__article">
+                <h1 class="title-article">
+                    Burn Calories Quicker in 30 Min.
+                </h1>
+                <div class="wrapper__name-block__article">
+                    <p class="data__name-block__article">
+                        28.05.2020
+                    </p>
+                    <div class="wrapper-tags__main-article">
+                        <div class="tag__main-article">
+                            <p class="content-tag__main-article">
+                                про продукт
+                            </p>
+                        </div>
+                        <div class="tag__main-article">
+                            <p class="content-tag__main-article">
+                                теги
+                            </p>
+                        </div>
+                        <div class="tag__main-article">
+                            <p class="content-tag__main-article">
+                                много тегов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-content__article">
+                    <div class="column-content__article">
+                        <p class="text-content__article">
+                            Luxury is something everyone deserves from time to time. Such an indulgence can make a vacation a truly rejuvenating experience. One of the best ways to get the luxury of the rich and famous to fit into your budget can be yours through yacht charter companies. These companies specialize in creating custom sailing vacations that redefine travel. 
+                        </p>
+                        <p class="text-content__article">
+                            Planning Your Luxury Trip 
+                        </p>
+                        <p class="text-content__article">
+                            With your budget in mind, it is easy to plan a chartered yacht vacation. Companies often have a fleet of sailing vessels that can accommodate parties of various sizes. You may want to make it a more intimate trip with only close family. There are charters that can be rented for as few as two people. These include either a sailboat or motorboat and can come with or without a crew and captain to sail the ship for you. If you choose not to hire a crew, you will have to show that you are knowledgeable of sailing and can handle the ship competently.
+                        </p>
+                        <p class="text-content__article">
+                            The next part of planning is to determine your starting and ending ports. This could be a place close to home and sail in one area or start and finish at two different ports. Generally, starting and stopping in the same port will save you money and is usually more convenient. You can also fly to a destination far from home and then sail another exotic sea. There are luxury yacht charter companies that cruise the Caribbean and Mediterranean seas or around Alaska, the Panama Canal, or anyplace you can imagine.
+                        </p>
+                        <p class="text-content__article">
+                            Determining the type of cruise is another aspect of planning a chartered yachting trip. You can have as little or many crew members as the ship will hold. A captain takes all the worries out of navigating and onboard housekeeping services make it a real vacation that rivals the finest hotel services. You can also choose to have a chef and service crew as part of your vacation package.
+                        </p>
+                        <img src="img/blog-post__img/img-article1.png" alt="img" class="img-content__article-one">
+                        <p class="text-content__article">
+                            Destinations & Ports of important Charter Companies  One of the greatest benefits of choosing a chartered cruise as a vacation is the choice. You will most likely have a rough itinerary and that can be affected by weather. However, you are flexible in deciding how long you want to stay in a particular port and if you want to add or subtract stops along the way.
+                        </p>
+                    </div>
+                    <div class="column-content__article">
+                        <img src="img/blog-post__img/img-article2.png" alt="img" class="img-content__article-two">
+                        <p class="text-content__article">
+                            Destinations & Ports of important Charter Companies  One of the greatest benefits of choosing a chartered cruise as a vacation is the choice. You will most likely have a rough itinerary and that can be affected by weather. However, you are flexible in deciding how long you want to stay in a particular port and if you want to add or subtract stops along the way.
+                        </p>
+                        <p class="text-content__article">
+                            Your yacht is your hotel that travels with you. There is only one flight and one hotel to book! Then you take all of your luggage and unpack it just once to enjoy several days of new destinations.
+                        </p>
+                        <p class="text-content__article">
+                            If you have never experienced cruising before, a chartered experience is a great way to get your feet wet. It is different from cruise lines with thousands of guests because the people on your ship will be your friends and family. The personal touches of a chartered trip will help you develop your love for the sea with all the best benefits of commercial cruises.
+                        </p>
+                        <p class="text-content__article">
+                            If you like the idea of knowing what it is really like to sail, but don’t want to risk safety, you can charter a sailing cruise that puts you in the role of deck hand. A competent crew will direct you as to your “chores” for keeping the ship in top shape and on course. 
+                        </p>
+                        <p class="text-content__article">
+                            Destinations & Ports of important Charter Companies  One of the greatest benefits of choosing a chartered cruise as a vacation is the choice. You will most likely have a rough itinerary and that can be affected by weather. However, you are flexible in deciding how long you want to stay in a particular port and if you want to add or subtract stops along the way.
+                        </p>
+                        <p class="text-content__article">
+                            If you like the idea of knowing what it is really like to sail, but don’t want to risk safety, you can charter a sailing cruise that puts you in the role of deck hand. A competent crew will direct you as to your “chores” for keeping the ship in top shape and on course. 
+                        </p>
+                        <p class="text-content__article">
+                            Destinations & Ports of important Charter Companies  One of the greatest benefits of choosing a chartered cruise as a vacation is the choice. You will most likely have a rough itinerary and that can be affected by weather. However, you are flexible in deciding how long you want to stay in a particular port and if you want to add or subtract stops along the way.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="share">
+        <div class="container">
+            <div class="block-network__share">
+                <h2 class="title-network__share">
+                    Поделиться:
+                </h2>
+                <ul class="ul-network__share">
+                    <li class="li-network__share">
+                        <a href="#" class="element-network__share">
+                            <img src="img/blog-post__img/twitter.png" alt="network" class="img__network-share">
+                        </a>
+                    </li>
+                    <li class="li-network__share">
+                        <a href="#" class="element-network__share">
+                            <img src="img/blog-post__img/inst.png" alt="network" class="img__network-share">
+                        </a>
+                    </li>
+                    <li class="li-network__share">
+                        <a href="#" class="element-network__share">
+                            <img src="img/blog-post__img/google.png" alt="network" class="img__network-share">
+                        </a>
+                    </li>
+                    <li class="li-network__share">
+                        <a href="#" class="element-network__share">
+                            <img src="img/blog-post__img/facebook.png" alt="network" class="img__network-share">
+                        </a>
+                    </li>
+                </ul>
+                <div class="wrapper-names__articles">
+                    <h2 class="block-name__article">
+                        Burn Calories Quicker in 30 Min
+                    </h2>
+                    <h2 class="block-name__article block-name__article-blue">
+                        Burn Calories Quicker in 30 Min
+                    </h2>
+                </div>
+                <div class="nav-article__share">
+                    <a href="#" class="element-article__share">
+                        Предыдущая статья
+                    </a>
+                    <a href="#" class="element-article__share">
+                        Следующая статья
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="block__news" id="close__window">
+                <h1 class="title__news">
+                    Подпишись на наши новости!
+                </h1>
+                <div class="input-construction">
+                    <p class="content__input-construction">
+                        Введи свой электронный адрес и будь в курсе всех обновлений
+                    </p>
+                    <form action="#" class="form__input-construction">
+                        <input type="email" placeholder="" name="email" class="input__input-construction" required>
+                        <button class="btn-blue btn__input-construction" id="btn__input">
+                            отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="construction__subscription-news" id="window__input">
+                <h1 class="title__subscription-news">
+                    Отлично!
+                </h1>
+                <p class="content__subscription-news">
+                    На адресс <span>example@maile.com</span> теперь будут приходить самые важные новости
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="wrapper__footer top">
+                <div class="block-logo">
+                    <a href="index.html" target="_blank" class="element__block-logo">
+                        <img src="img/logo__footer.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="menu__footer column-one">
+                    <ul class="ul-menu__footer">
+                        <li class="li-menu__footer">
+                            <a href="blog.html" target="_blank" class="element-menu__footer">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="error.html" class="element-menu__footer">
+                                Цены
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-menu__footer blog-contacts">
+                        <li class="li-menu__footer">
+                            <a href="blog.html" target="_blank" class="element-menu__footer">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="contacts.html" target="_blank" class="element-menu__footer">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    </ul>
+                    <ul class="ul-menu__footer profile">
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Вход
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__footer column-two">
+                    <ul class="ul-menu__footer inform">
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                infosmartsign@smarttender.biz
+                            </a>
+                        </li>
+                        <li class="li-menu__footer">
+                            <a href="#" class="element-menu__footer">
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ul-menu__footer">
+                        <li class="li-menu__footer li-gray">
+                            <a href="#" class="element-menu__footer el-gray">
+                                пр-т Миколи Бажана, 14 А
+                                Київ, 02072
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:0 800 750643" class="element-menu__footer el-gray">
+                                0 800 750643
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:+380 44 334 56 43" class="element-menu__footer el-gray">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                        <li class="li-menu__footer li-gray">
+                            <a href="tel:+380 44 334 56 43" class="element-menu__footer el-gray">
+                                +380 44 334 56 43
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="up__footer">
+                    <img src="img/arrow__top.png" alt="arrow" class="img-up__footer">
+                </div>
+            </div>
+            <div class="wrapper__footer bottom">
+                <p class="content-logo__footer">
+                    © 2020 Signy
+                </p>
+                <ul class="ul-footer__bottom">
+                    <li class="li-footer__bottom">
+                        <a href="#" class="element-footer__bottom">
+                            Договір оферти
+                        </a>
+                    </li>
+                    <li class="li-footer__bottom">
+                        <a href="#" class="element-footer__bottom">
+                            Безпека сервісу
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>
